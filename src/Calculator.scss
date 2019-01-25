@@ -1,0 +1,18 @@
+.calculator {
+  border: 3px solid #393F48;
+  background-color: #9FAFC9;
+  border-radius: .25rem;
+  width: 350px;
+  margin: 10vh auto 0;
+  padding-top: 0px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 10px 20px black;
+  p{
+    margin-bottom:70px;
+    background-color: #EFF5FB;
+  }
+
+}
