@@ -23,6 +23,7 @@ class CalculatorInput extends Component {
     } catch (e) {
       result = 0;
     }
+    result = Math.round(result*1000000)/1000000;
     onSave(result);
     this.setState({inputMath:''})
   }
@@ -117,11 +118,17 @@ class CalculatorInput extends Component {
                   <button className="calc btn btn-dark" onClick={this.handleButtonInput}>9</button>
                 </td>
                 <td>
-                  <button className="calc btn btn-dark" onClick={this.handleClear}>c</button>
+                  <button className="calc btn btn-dark" onClick={this.handleButtonInput}>.</button>
                 </td>
                 <td>
                   <button className="calc btn btn-dark" onClick={this.handleSubmit}>=</button>
                 </td>
+              </tr>
+              <tr>
+              <td>
+              <button className="calc btn btn-dark" onClick={this.handleClear}>c</button>
+              </td>
+              <td/><td/><td/>
               </tr>
             </tbody>
           </table>
